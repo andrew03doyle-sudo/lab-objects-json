@@ -1,1 +1,16 @@
 console.log("Lab loaded: check each part in the console.");
+const student = {
+  name: "Alex Student",
+  age: 20,
+  enrolled: true,
+  courses: ["CPAN133", "CPAN116", "CPAN111"],
+  displayInfo() {
+    const status = this.enrolled ? "currently enrolled" : "not enrolled";
+    return `${this.name} is ${this.age} years old and is ${status}.`;
+  }
+};
+
+console.log("=== Part 1: Student Object ===");
+console.log("Student name:", student.name);
+console.log("Student age:", student.age);
+console.log("Display info:", student.displayInfo());
