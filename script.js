@@ -58,3 +58,31 @@ const allCourses = [...student.courses, ...extraCourses];
 console.log("Original student courses:", student.courses);
 console.log("Extra courses:", extraCourses);
 console.log("Merged courses (with spread):", allCourses);
+
+
+
+const studentExtended = {
+  name: "Alex Student",
+  age: 20,
+  enrolled: true,
+  courses: ["CPAN133", "CPAN116", "CPAN204"],
+  displayInfo() {
+    const status = this.enrolled ? "currently enrolled" : "not enrolled";
+    return `${this.name} is ${this.age} years old and is ${status}.`;
+  },
+  addCourse(newCourse) {
+    this.courses.push(newCourse);
+    console.log(`Course "${newCourse}" added for ${this.name}.`);
+  },
+  totalCourses() {
+    return this.courses.length;
+  }
+};
+
+
+
+console.log("\n=== Part 5: Object Methods ===");
+
+student.addCourse("JavaScript Programming");
+console.log("Courses after adding new one:", student.courses);
+console.log("Total number of courses:", student.totalCourses());
