@@ -40,3 +40,21 @@ const scores = [85, 92, 78, 90];
 const [firstScore, secondScore] = scores;
 console.log("First score:", firstScore);
 console.log("Second score:", secondScore);
+
+
+
+console.log("\n=== Part 4: Spread Operator ===");
+
+const clonedStudent = {
+  ...student,
+  graduationYear: 2027
+};
+
+console.log("Cloned student with graduationYear:", clonedStudent);
+
+const extraCourses = ["Web Development", "Operating Systems"];
+const allCourses = [...student.courses, ...extraCourses];
+
+console.log("Original student courses:", student.courses);
+console.log("Extra courses:", extraCourses);
+console.log("Merged courses (with spread):", allCourses);
