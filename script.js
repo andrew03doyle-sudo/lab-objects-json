@@ -26,3 +26,17 @@ const studentFromJSON = JSON.parse(studentJSON);
 console.log("Student object created from JSON:", studentFromJSON);
 
 console.log("Are the two objects strictly equal?", student === studentFromJSON);
+
+
+
+console.log("\n=== Part 3: Destructuring ===");
+
+const { name, courses } = student;
+console.log("Destructured name:", name);
+console.log("Destructured courses:", courses);
+
+const scores = [85, 92, 78, 90];
+
+const [firstScore, secondScore] = scores;
+console.log("First score:", firstScore);
+console.log("Second score:", secondScore);
