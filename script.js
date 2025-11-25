@@ -86,3 +86,14 @@ console.log("\n=== Part 5: Object Methods ===");
 student.addCourse("JavaScript Programming");
 console.log("Courses after adding new one:", student.courses);
 console.log("Total number of courses:", student.totalCourses());
+
+
+
+console.log("\n=== Bonus: Average Score with reduce ===");
+
+const totalScore = scores.reduce((sum, current) => sum + current, 0);
+const averageScore = totalScore / scores.length;
+
+console.log("Scores:", scores);
+console.log("Total score:", totalScore);
+console.log("Average score:", averageScore);
