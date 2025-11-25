@@ -1,7 +1,7 @@
 console.log("Lab loaded: check each part in the console.");
 const student = {
-  name: "Alex Student",
-  age: 20,
+  name: "andrew doyle",
+  age: 22,
   enrolled: true,
   courses: ["CPAN133", "CPAN116", "CPAN111"],
   displayInfo() {
@@ -62,10 +62,10 @@ console.log("Merged courses (with spread):", allCourses);
 
 
 const studentExtended = {
-  name: "Alex Student",
-  age: 20,
+  name: "andrew doyle",
+  age: 22,
   enrolled: true,
-  courses: ["CPAN133", "CPAN116", "CPAN204"],
+  courses: ["CPAN133", "CPAN116", "CPAN111"],
   displayInfo() {
     const status = this.enrolled ? "currently enrolled" : "not enrolled";
     return `${this.name} is ${this.age} years old and is ${status}.`;
